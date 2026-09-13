@@ -2,34 +2,34 @@
 
 
 
-# [Project Name] 🎯
+# [mood fan] 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [cool kids]
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: [Zoha Mahreen] - [School Of Engineering,CUSAT]
+- Member 2: [Nufa Fathima] - [School Of Engineering,CUSAT]
+
 
 ### Project Description
-[2-3 lines about what your project does]
+[It is a mood fan.The whole theme of the website and the speed of the fan changes according to your mood.]
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+[A fan's speed does not change according to your mood.]
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+[Make the fan's spin changes according to your mood.]
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- [HTML,Java Script,CSS]
+- [None]
+- [None]
+- [VS Code,Web Browser]
 
 For Hardware:
 - [List main components]
@@ -58,8 +58,48 @@ For Software:
 *Add caption explaining what this shows*
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+![Workflow]   ┌─────────────┐
+              │    START    │
+              └──────┬──────┘
+                     ↓
+          ┌────────────────────┐
+          │   Open Mood-Fan    │
+          └─────────┬──────────┘
+                    ↓
+          ┌────────────────────┐
+          │   Loading Screen   │
+          └─────────┬──────────┘
+                    ↓
+          ┌────────────────────┐
+          │   Choose a Mood   │
+          └─────────┬──────────┘
+                    ↓
+       ┌────────────┴────────────┐
+       ↓            ↓            ↓
+     Happy         Sad          Angry
+       ↓            ↓            ↓
+   Fast Fan     Slow Fan     Very Fast Fan
+   Happy Music  Sad Music    Angry Music
+       │            │            │
+       └────────────┼────────────┘
+                    ↓
+               Confused
+                    ↓
+             Medium Fan
+           Confused Music
+                    ↓
+          ┌──────────────────┐
+          │   Blank Mind?    │
+          └────────┬─────────┘
+                   ↓
+          Stop Music + Fan
+                   ↓
+          ┌──────────────────┐
+          │   Blank Mind     │
+          └────────┬─────────┘
+                   ↓
+          (Choose another mood)
+
 
 For Hardware:
 
@@ -82,7 +122,7 @@ For Hardware:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
+[]
 *Explain what the video demonstrates*
 
 # Additional Demos
