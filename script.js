@@ -35,6 +35,10 @@ function chooseMood(mood) {
        ===================================== */
 
     if (mood === "happy") {
+        
+        // Change background to happy GIF
+        document.body.style.backgroundImage =
+        "url('images/happy.gif')";
 
         // Make the fan spin quickly
         fan.style.animationDuration = "0.7s";
@@ -54,6 +58,10 @@ function chooseMood(mood) {
 
     else if (mood === "sad") {
 
+       // Change background to sad GIF
+       document.body.style.backgroundImage =
+        "url('images/sad.gif')";
+
         // Make the fan spin slowly
         fan.style.animationDuration = "3s";
 
@@ -69,6 +77,10 @@ function chooseMood(mood) {
        ===================================== */
 
     else if (mood === "angry") {
+
+        // Change background to angry GIF
+        document.body.style.backgroundImage =
+        "url('images/angry.gif')";
 
         // Make the fan spin VERY fast
         fan.style.animationDuration = "0.2s";
@@ -86,6 +98,10 @@ function chooseMood(mood) {
 
     else if (mood === "confused") {
 
+        // Change background to confused GIF
+        document.body.style.backgroundImage =
+        "url('images/confused.gif')";
+        
         // Medium-speed fan
         fan.style.animationDuration = "1.5s";
 
