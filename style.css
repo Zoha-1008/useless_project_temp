@@ -14,14 +14,15 @@
 }
 
 :root {
-    --cream: #f8f1e5;
-    --cream-dark: #eee3d2;
+    --crimson: #4a0e18;
+    --crimson-dark: #350A12;
 
-    --pink: #d9a5a5;
-    --pink-light: #efd0d0;
+    --grey: #d1cbc5;
+    --grey-dark: #928b86;
 
-    --sage: #aeb99b;
-    --sage-light: #d7dfc9;
+    --yellow: #e5b94f;
+    --yellow-dark: #9a7020;
+    --yellow-light: #f4d77a;
 
     --butter: #e7ca91;
     --blue: #a9bbc1;
@@ -40,8 +41,8 @@
 
 body {
     min-height: 100vh;
-    background: var(--cream);
-    color: var(--ink);
+    background: var(--crimson);
+    color: var(--grey);
     font-family: "Trebuchet MS", "Arial Rounded MT Bold", Arial, sans-serif;
     overflow-x: hidden;
 }
@@ -63,7 +64,7 @@ body {
     background:
         radial-gradient(circle at 20% 20%, rgba(217, 165, 165, 0.15), transparent 25%),
         radial-gradient(circle at 80% 70%, rgba(174, 185, 155, 0.18), transparent 28%),
-        var(--cream);
+        var(--crimson-dark);
 
     animation: openingFade 0.8s ease 2.7s forwards;
 }
@@ -85,7 +86,7 @@ body {
 /* Little sparkle above the logo */
 
 .sparkle {
-    color: var(--butter);
+    color: var(--yellow);
     font-size: 2.2rem;
     margin-bottom: 5px;
 
@@ -144,9 +145,9 @@ body {
     font-size: clamp(0.9rem, 3vw, 1.2rem);
     letter-spacing: 0.12em;
 
-    color: var(--brown);
+    color: var(--grey);
 
-    opacity: 0;
+    opacity: 0.85;
     animation: fadeUp 0.8s ease 0.7s forwards;
 }
 
