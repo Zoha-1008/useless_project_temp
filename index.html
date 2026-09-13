@@ -1,1 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mood-Fan ♡</title>
+
+    <!-- Connects our CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- =====================================
+         OPENING SCREEN
+         ===================================== -->
+
+    <section id="loading-screen">
+
+        <div class="loading-content">
+
+            <!-- Little decoration -->
+            <div class="sparkle">✦</div>
+
+            <!-- Project name -->
+            <h1 id="logo">
+                MOOD-FAN
+            </h1>
+
+            <!-- Small subtitle -->
+            <p class="tagline">
+                your mood, my spin ♡
+            </p>
+
+            <!-- Loading dots -->
+            <div class="loading-animation">
+                <span>•</span>
+                <span>•</span>
+                <span>•</span>
+            </div>
+
+            <p class="loading-text">
+                spinning up...
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         MAIN PAGE
+         ===================================== -->
+
+    <main id="main-page">
+
+
+        <!-- Cute floating decorations -->
+
+        <div class="decoration decoration-one">
+            ✿
+        </div>
+
+        <div class="decoration decoration-two">
+            ♡
+        </div>
+
+        <div class="decoration decoration-three">
+            ✦
+        </div>
+
+
+        <!-- =====================================
+             HEADER
+             ===================================== -->
+
+        <header class="header">
+
+            <p class="small-title">
+                welcome to
+            </p>
+
+            <h1>
+                MOOD-FAN
+            </h1>
+
+            <p class="question">
+                How are you feeling today?
+            </p>
+
+        </header>
+
+
+        <!-- =====================================
+             MOOD BUTTONS
+             ===================================== -->
+
+        <section class="mood-section">
+
+            <div class="mood-buttons">
+
+
+                <!-- HAPPY -->
+
+                <button
+                    class="mood-button happy"
+                    type="button"
+                    onclick="chooseMood('happy')">
+
+                    <span class="mood-emoji">
+                        😊
+                    </span>
+
+                    <span class="mood-name">
+                        Happy
+                    </span>
+
+                </button>
+
+
+                <!-- SAD -->
+
+                <button
+                    class="mood-button sad"
+                    type="button"
+                    onclick="chooseMood('sad')">
+
+                    <span class="mood-emoji">
+                        😔
+                    </span>
+
+                    <span class="mood-name">
+                        Sad
+                    </span>
+
+                </button>
+
+
+                <!-- ANGRY -->
+
+                <button
+                    class="mood-button angry"
+                    type="button"
+                    onclick="chooseMood('angry')">
+
+                    <span class="mood-emoji">
+                        😡
+                    </span>
+
+                    <span class="mood-name">
+                        Angry
+                    </span>
+
+                </button>
+
+
+                <!-- CONFUSED -->
+
+                <button
+                    class="mood-button confused"
+                    type="button"
+                    onclick="chooseMood('confused')">
+
+                    <span class="mood-emoji">
+                        😵
+                    </span>
+
+                    <span class="mood-name">
+                        Confused
+                    </span>
+
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             FAN
+             ===================================== -->
+
+        <section class="fan-section">
+
+            <div class="fan-container">
+
+
+                <!-- Fan blades -->
+
+                <div
+                    id="fan-blades"
+                    class="fan-blades">
+
+                    <div class="blade blade-one"></div>
+
+                    <div class="blade blade-two"></div>
+
+                    <div class="blade blade-three"></div>
+
+                    <div class="blade blade-four"></div>
+
+                </div>
+
+
+                <!-- Center of fan -->
+
+                <div class="fan-center">
+                    ♡
+                </div>
+
+
+                <!-- Fan stand -->
+
+                <div class="fan-neck"></div>
+
+                <div class="fan-base"></div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             MOOD MESSAGE
+             ===================================== -->
+
+        <section class="message-section">
+
+            <div id="mood-card">
+
+                <p id="mood-message">
+                    Pick a mood and let the fan decide its vibe ♡
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             FOOTER
+             ===================================== -->
+
+        <footer>
+
+            <p>
+                made with ♡ and questionable decisions
+            </p>
+
+            <p class="footer-small">
+                mood-fan © 2026
+            </p>
+
+        </footer>
+
+
+    </main>
+
+
+    <!-- Connects our JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
