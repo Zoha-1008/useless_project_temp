@@ -12,6 +12,47 @@
 const fan = document.getElementById("fan-blades");
 const message = document.getElementById("mood-message");
 
+// ===============================
+// MOOD MUSIC
+// ===============================
+
+const moodMusic = {
+    happy: new Audio("music/happy.mp3"),
+    sad: new Audio("music/sad.mp3"),
+    angry: new Audio("music/angry.mp3"),
+    confused: new Audio("music/confused.mp3")
+};
+
+// Make the music loop
+Object.values(moodMusic).forEach(audio => {
+    audio.loop = true;
+    audio.volume = 0.5;
+});
+
+let currentMusic = null;
+
+function playMoodMusic(mood) {
+
+    // Stop the previous mood's music
+    if (currentMusic) {
+        currentMusic.pause();
+        currentMusic.currentTime = 0;
+    }
+
+    // Find the new mood's music
+    const newMusic = moodMusic[mood];
+
+    if (newMusic) {
+        currentMusic = newMusic;
+
+        newMusic.currentTime = 0;
+
+        newMusic.play().catch(error => {
+            console.log("Music needs user interaction:", error);
+        });
+    }
+}
+
 
 /* =========================================
    MOOD FUNCTION
@@ -28,7 +69,11 @@ const message = document.getElementById("mood-message");
 */
 
 function chooseMood(mood) {
+   playMoodMusic(mood);
 
+        
+   //Start the fan again when choosing mood
+   fan.classList.remove("stopped");
 
     /* =====================================
        HAPPY
@@ -101,7 +146,7 @@ function chooseMood(mood) {
         // Change background to confused GIF
         document.body.style.backgroundImage =
         "url('images/confused.gif')";
-        
+
         // Medium-speed fan
         fan.style.animationDuration = "1.5s";
 
@@ -134,7 +179,25 @@ function chooseMood(mood) {
 
 }
 
+/* =========================================
+   BLANK MIND
+   ========================================= */
 
+function blankMind() {
+
+    // Remove the GIF
+    document.body.style.backgroundImage = "none";
+
+    // Return to the original background
+    document.body.style.background = "var(--crimson)";
+
+    // Stop Fan
+    fan.classList.add("stopped");
+
+    // Change message
+    message.innerText =
+        "Blank mind. No thoughts, just breeze 🫧 ♡";
+}
 /* =========================================
    PAGE LOADED
    =========================================

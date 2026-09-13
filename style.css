@@ -512,11 +512,14 @@ body {
 
     transform: translateX(-50%);
 
+    background: transparent;
+
     border: 3px solid var(--pink);
 
     border-radius: 50%;
 
-    opacity: 0.65;
+    opacity: 0.95;
+    z-index: 0;
 }
 
 
@@ -538,6 +541,10 @@ body {
     animation: fanSpin 1.5s linear infinite;
 }
 
+/*BLANK MIND = fan completely stopped*/
+.fan-blades.stopped{
+    animation: none;
+}
 
 /* Individual blades */
 
@@ -552,7 +559,8 @@ body {
 
     transform-origin: 50% 12%;
 
-    background: var(--blue);
+    background: #8B0000;
+    z-index: 2;
 
     border-radius: 70% 35% 70% 25%;
 
@@ -688,9 +696,9 @@ body {
 
     border-radius: 50px;
 
-    background: rgba(255, 252, 246, 0.82);
+    background: #5c1823;
 
-    border: 2px solid rgba(93, 81, 75, 0.07);
+    border: 2px solid #e0b84c;
 
     box-shadow:
         0 8px 20px var(--soft-shadow);
@@ -700,6 +708,7 @@ body {
 #mood-message {
     font-size: 0.95rem;
     line-height: 1.5;
+    color: #d8d2cc;
 }
 
 
@@ -948,4 +957,5 @@ footer {
         animation-iteration-count: 1 !important;
         scroll-behavior: auto !important;
     }
+
 }
