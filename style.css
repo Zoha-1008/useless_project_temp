@@ -66,7 +66,7 @@ body {
         radial-gradient(circle at 80% 70%, rgba(174, 185, 155, 0.18), transparent 28%),
         var(--crimson-dark);
 
-    animation: openingFade 0.8s ease 2.7s forwards;
+    animation: openingFade 2s ease 4s forwards;
 }
 
 
@@ -315,7 +315,7 @@ body {
 
 
 .mood-button {
-    min-height: 125px;
+    min-height: 145px;
 
     display: flex;
     flex-direction: column;
@@ -356,10 +356,19 @@ body {
 }
 
 
-.mood-emoji {
-    font-size: 2.3rem;
+.mood-image {
+    width: 75px;
+    height: 75px;
+    
+    object-fit: contain;
+    display: block;
+
+    transition: transform 0.25s ease;
 }
 
+.mood-button:hover.mood-image {
+    transform: scale(1.08) rotate(-2deg);
+}
 
 .mood-name {
     font-size: 0.9rem;
