@@ -183,7 +183,15 @@ function chooseMood(mood) {
    BLANK MIND
    ========================================= */
 
-function blankMind() {
+
+   function blankMind() {
+
+    // Stop the music
+    if (currentMusic) {
+        currentMusic.pause();
+        currentMusic.currentTime = 0;
+        currentMusic = null;
+    }
 
     // Remove the GIF
     document.body.style.backgroundImage = "none";
